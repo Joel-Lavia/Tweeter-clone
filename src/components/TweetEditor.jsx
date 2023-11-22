@@ -16,7 +16,7 @@ function TweetEditor(){
 
         <div className='tweet-editor-buttons'>
         <div className='tweet-editor-actions'>
-        <input type="image" src={img} alt="images" />
+        <input type="image" src={img} alt="images"/>
         <input type="image" src={gif} alt="Gif" />
         <input type="image" src={pol} alt="poll" />
         <input type="image" src={emoji} alt="emojis" />

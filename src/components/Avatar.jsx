@@ -1,8 +1,7 @@
-import imgProfil from '../images/profile-photo.png';
-function avatar(avatarImg){
+function avatar({avatarImg}){
     return(
         <a href="#" className='avatar'>
-        <img src={imgProfil}  alt="profile-photo.png"/>
+        <img src={avatarImg}  alt="profile-photo.png"/>
         </a>
     );
 }

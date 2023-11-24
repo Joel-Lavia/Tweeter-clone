@@ -3,12 +3,13 @@ import gif from '../images/Gif.png'
 import pol from '../images/Poll.png'
 import emoji from '../images/Emoji.png'
 import schedule from '../images/Schedule.png'
+import imgProfil from '../images/profile-photo.png';
 import Avatar from './Avatar';
 
-function TweetEditor(){
+function TweetEditor({imgtwettavatar}){
     return (
     <section className='tweet-editor'>
-        <Avatar/>
+        <Avatar avatarImg={imgProfil}/>
         <form action="" className='tweet-editor-form'>
         <input type="text" name="" id="" className='tweet-editor-input' placeholder="What's happening ?" />
 

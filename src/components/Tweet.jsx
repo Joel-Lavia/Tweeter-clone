@@ -1,14 +1,12 @@
 import group from '../images/Group.png';
 import TweetAction from './TweetAction';
+import Avatar from './Avatar';
 
 function Tweet({tweettitle,tweettitleDetail,tweetimg,tweetText,tweetSheet,reply1,retweet,react,}) {
  
    return(
  <section className='tweet'>
-
-<a href="#" className='tweet-avatar'>
-  <img src={tweetimg} alt="" />
-</a>
+<Avatar avatarImg={tweetimg} />
 
  <div className='tweet-body'>
 

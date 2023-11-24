@@ -6,7 +6,7 @@ import schedule from '../images/Schedule.png'
 import imgProfil from '../images/profile-photo.png';
 import Avatar from './Avatar';
 
-function TweetEditor({imgtwettavatar}){
+function TweetEditor(){
     return (
     <section className='tweet-editor'>
         <Avatar avatarImg={imgProfil}/>

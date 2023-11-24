@@ -2,7 +2,7 @@ import reply from '../images/Reply.png'
 import retweet from '../images/Retweet.png'
 import react from '../images/React.png'
 import buton from '../images/Buton.png'
-function TweetAction({btnreply,btnretweet,btnreact,btnbuton}){
+function TweetAction({btnreply,btnretweet,btnreact}){
 return(
 <div className='tweet-actions'>
 
@@ -23,7 +23,6 @@ return(
 
 <div className='tweet-action'>
 <a href="#"><img src={buton} alt="" /></a>
-<span>{btnbuton}</span>
 </div>
 
 </div>

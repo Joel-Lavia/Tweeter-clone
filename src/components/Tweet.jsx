@@ -1,7 +1,7 @@
 import group from '../images/Group.png';
 import TweetAction from './TweetAction';
 
-function Tweet({tweettitle,tweettitleDetail,tweetimg,tweetText,tweetSheet,reply1,retweet,react,buton}) {
+function Tweet({tweettitle,tweettitleDetail,tweetimg,tweetText,tweetSheet,reply1,retweet,react,}) {
  
    return(
  <section className='tweet'>
@@ -25,7 +25,7 @@ function Tweet({tweettitle,tweettitleDetail,tweetimg,tweetText,tweetSheet,reply1
 <img src={tweetSheet} alt="" />
 </a>
 
-<TweetAction btnreply={reply1} btnretweet={retweet} btnreact={react} btnbuton={buton} />
+<TweetAction btnreply={reply1} btnretweet={retweet} btnreact={react} />
  </div>
 
  </section>

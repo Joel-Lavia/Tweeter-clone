@@ -18,7 +18,6 @@ function TweetEditor() {
           className="tweet-editor-input"
           placeholder="What's happening ?"
         />
-
         <div className="tweet-editor-buttons">
           <div className="tweet-editor-actions">
             <a href="#">

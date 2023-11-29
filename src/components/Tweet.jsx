@@ -1,11 +1,14 @@
 import data from "../Models/Data";
 function Twett() {
-  const tweet = data.map((dataAll) => dataAll);
-  console.log(tweet);
-  return (
-    <section>
-      <p key={tweet.id}>{tweet}</p>
-    </section>
-  );
+  const tweet = data.map((dataAll) => {
+    return (
+      <div key={dataAll.id}>
+        <h1>{dataAll.nomTweet}</h1>
+        <p>{dataAll.tweetSetence}</p>
+      </div>
+    );
+  });
+
+  return <section>{tweet}</section>;
 }
 export default Twett;

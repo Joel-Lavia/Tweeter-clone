@@ -20,21 +20,21 @@ function TweetEditor() {
         />
         <div className="tweet-editor-buttons">
           <div className="tweet-editor-actions">
-            <a href="#">
-              <img src={img} alt="" />
-            </a>
-            <a href="#">
-              <img src={gif} alt="" />
-            </a>
-            <a href="#">
-              <img src={pol} alt="" />
-            </a>
-            <a href="#">
-              <img src={emoji} alt="" />
-            </a>
-            <a href="#">
-              <img src={schedule} alt="" />
-            </a>
+            <button>
+              <img src={img} alt="button dowlan img" />
+            </button>
+            <button>
+              <img src={gif} alt="button dowlan img" />
+            </button>
+            <button>
+              <img src={pol} alt="button dowlan img" />
+            </button>
+            <button>
+              <img src={emoji} alt="button dowlan img" />
+            </button>
+            <button>
+              <img src={schedule} alt="button dowlan img" />
+            </button>
           </div>
           <button className="button">Tweet</button>
         </div>

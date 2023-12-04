@@ -33,7 +33,7 @@ body{
     height: auto;
 
 /*style ajouter par moi */
-   background-color: black;
+background: rgba(0,0,0,0.5);
    border-style:none;
    /*style ajouter par moi */
 }
@@ -197,8 +197,8 @@ body{
     justify-content: center;
     gap: 20px;
     /*style ajouter par moi */
-   background-color: black;
+    background: rgba(0,0,0,0.5);
    border-style:none;
-   color: white;
+   color:grey;
    /*style ajouter par moi */
 }

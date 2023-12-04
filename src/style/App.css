@@ -196,9 +196,27 @@ background: rgba(0,0,0,0.5);
     align-items: center;
     justify-content: center;
     gap: 20px;
-    /*style ajouter par moi */
+    /* my style*/
     background: rgba(0,0,0,0.5);
    border-style:none;
    color:grey;
-   /*style ajouter par moi */
+   /* my style*/
+}
+.sidebarSection{
+padding: 1.5rem 1rem;
+}
+.sidebar{
+display:flex;
+
+flex-direction: column;
+gap:50px;
+}
+.sidebarbtn{
+ display: flex;
+    gap:1rem;
+    color:white;
+    font-size:1.2rem;
+    background-color: black;
+    border-style:none;
+    font-weight:bold;
 }

@@ -203,11 +203,13 @@ background: rgba(0,0,0,0.5);
    /* my style*/
 }
 .sidebarSection{
+    display: flex;
+    justify-content:space-between;
+    flex-direction:column;
 padding: 1.5rem 1rem;
 }
 .sidebar{
 display:flex;
-
 flex-direction: column;
 gap:50px;
 }

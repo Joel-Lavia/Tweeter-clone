@@ -28,6 +28,8 @@ function SidebarLeft() {
      </div>
     
  <div>
+  <p>Bradley Ortiz</p>
+   
  <Avatar avatarImg={profilePhoto}/>
  </div>
     </section>

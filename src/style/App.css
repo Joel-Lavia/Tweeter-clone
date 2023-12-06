@@ -202,6 +202,7 @@ background: rgba(0,0,0,0.5);
    color:grey;
    /* my style*/
 }
+/*Sidebar*/
 .sidebarSection{
     display: flex;
     justify-content:space-between;
@@ -225,6 +226,10 @@ gap:50px;
 .profilSibare{
 display: flex;
 font-size:1.2em;
-color: #1D9BF0;
 font-weight:bold;
+}
+.tweet-name{
+ display: flex; 
+ flex-direction: column; 
+ font-size:1.1em;
 }

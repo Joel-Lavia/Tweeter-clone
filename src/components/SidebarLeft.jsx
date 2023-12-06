@@ -8,7 +8,7 @@ import list from "../icons/Lists.png";
 import profilTweet from "../icons/Profile.png";
 import profilePhoto from "../images/profile-photo.png"
 import more from "../icons/More.png";
-import Avatar from "./Avatar";
+import ProfilSetting from "./ProfilSetting";
 
 function SidebarLeft() {
 
@@ -29,7 +29,7 @@ function SidebarLeft() {
      </div>
     
      
-
+<ProfilSetting imgProfilSidebaLeft={profilePhoto} />
 
     </section>
   );

@@ -7,10 +7,11 @@ import bookMark from "../icons/Bookmarks.png";
 import list from "../icons/Lists.png";
 import profilTweet from "../icons/Profile.png";
 import profilePhoto from "../images/profile-photo.png"
-import more from "../icons/More.png"
+import more from "../icons/More.png";
 import Avatar from "./Avatar";
 
 function SidebarLeft() {
+
   return (
     <section className="sidebarSection">
 
@@ -27,11 +28,9 @@ function SidebarLeft() {
       <button className="button">Tweet</button>
      </div>
     
- <div>
-  <p>Bradley Ortiz</p>
-   
- <Avatar avatarImg={profilePhoto}/>
- </div>
+     
+
+
     </section>
   );
 }

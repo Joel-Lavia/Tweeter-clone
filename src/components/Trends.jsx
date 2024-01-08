@@ -5,7 +5,7 @@ import Follow from './Follow';
 function Trends() {
 return(
 <section>
-<p> <img src={iconSeach} alt="iconSeach.png" /> <input type="seach"  placeholder="Seach Twitter" /></p>
+<p className='inputSeach'><input type="seach"  placeholder='Seach twitter' /></p>
 
 <div>
 <p>Trends for you <img src={settingimg} alt="Settings.png" /></p>

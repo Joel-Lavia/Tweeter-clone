@@ -233,3 +233,21 @@ font-weight:bold;
  flex-direction: column; 
  font-size:1.1em;
 }
+
+.inputSeach input{
+background-color:#202327;
+padding:0.5em;
+border-style:none;
+background-image: url('../icons/Search.png');
+background-repeat:no-repeat;
+background-position:2em;
+padding-left:4em;
+padding-top:1em;
+padding-bottom:1em;
+padding-right:8em;
+border-radius:40px;
+background-color:#202327;
+text-align: center;
+color: white;
+}
+

@@ -1,7 +1,7 @@
 function BtnFollow() {
 return(
 <div>
-<button>Follow</button>
+<button className="BtnFollow">Follow</button>
 </div>
 );
 }

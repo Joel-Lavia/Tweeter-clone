@@ -31,7 +31,7 @@ function SidebarLeft() {
      </div>
     
      
-<ProfilSetting imgProfilSidebaLeft={profilePhoto} namProfil={'Bradley Ortiz killkkkkkk'} details={'@bradley_'} iconProfil={privateImg} />
+<ProfilSetting imgProfilSidebaLeft={profilePhoto} namProfil={'Bradley Ortiz'} details={'@bradley_'} iconProfil={privateImg} />
 
     </section>
   );

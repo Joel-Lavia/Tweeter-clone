@@ -11,7 +11,10 @@ export default function App() {
     <Layout>
       <SidebarLeft />
       <Home />
+
+      <p className="trendsPage">
       <Trends/>
+      </p>
     </Layout>
   );
 }

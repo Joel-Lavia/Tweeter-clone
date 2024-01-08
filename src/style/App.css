@@ -244,10 +244,71 @@ background-position:2em;
 padding-left:4em;
 padding-top:1em;
 padding-bottom:1em;
-padding-right:8em;
+padding-right:10em;
 border-radius:40px;
 background-color:#202327;
 text-align: center;
 color: white;
 }
+.trends{
+display:flex;
+gap:7em;
+margin-bottom:2em;
+font-weight: bold;
+font-size:1.3em;
 
+
+}
+.subtitle-trend{
+color:gray;
+}
+.tag{
+font-weight:bold;
+}
+.section-trend{
+background-color: #202327;
+margin-top:1em;
+border-radius:15px;
+padding-left:1em;
+padding-right:0em;
+padding-top:1em;
+padding-bottom:1em;
+}
+.tradindList{
+margin-bottom:2em;
+}
+.trendMore{
+display:flex;
+gap:10em;
+}
+.btnshomore{
+background-color:#202327;
+color:#1D9BF0;
+font-weight: bold;
+font-size:1.1em;
+border-style: none;
+}
+.follow{
+display:flex;
+}
+.BtnFollow{
+padding: .7rem 1.5rem;
+border: none;
+font-size:1em;
+border-radius:50px;
+text-align: center;
+}
+.followspace{
+display:flex;
+flex-direction:column;
+gap:2em;
+}
+.BtnFollowspace{
+line-height:3.7em;
+}
+.btnfollowShomore{
+margin-top:1.5em;
+}
+.trendsPage{
+margin-top:1em;
+}

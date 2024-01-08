@@ -9,6 +9,8 @@ import profilTweet from "../icons/Profile.png";
 import profilePhoto from "../images/profile-photo.png"
 import more from "../icons/More.png";
 import ProfilSetting from "./ProfilSetting";
+import privateImg from "../images/Private.png"
+
 
 function SidebarLeft() {
 
@@ -29,7 +31,7 @@ function SidebarLeft() {
      </div>
     
      
-<ProfilSetting imgProfilSidebaLeft={profilePhoto} />
+<ProfilSetting imgProfilSidebaLeft={profilePhoto} namProfil={'Bradley Ortiz'} details={'@bradley_'} iconProfil={privateImg} />
 
     </section>
   );

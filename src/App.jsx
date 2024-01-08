@@ -10,7 +10,6 @@ export default function App() {
     <Layout>
       <SidebarLeft />
       <Home />
-      
     </Layout>
   );
 }

@@ -31,9 +31,9 @@ const [count,setCount] = useState(null);
           
           {/*Tweetbutton*/}
           <div className="tweet-actions">
-            <TweetLike likeImg={dataAll.btn.replyImg}/>
-            <TweetLike likeImg={dataAll.btn.retweetImg}/>
-            <TweetLike likeImg={dataAll.btn.reactImg}/>
+            <TweetLike likeImg={dataAll.btn.replyImg} nbr={dataAll.btn.numbeeReply}/>
+            <TweetLike likeImg={dataAll.btn.retweetImg} nbr={dataAll.btn.numberRetweet}/>
+            <TweetLike likeImg={dataAll.btn.reactImg} nbr={dataAll.btn.numberReact}/>
             <button className="tweet-action">
               <img src={dataAll.btn.btnDowlandImg} alt="button Dowland" />
             </button>

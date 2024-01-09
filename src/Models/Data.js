@@ -64,13 +64,13 @@ const data = [
 
     btn: {
       replyImg: reply,
-      numbeeReply: `${123}k`,
+      numbeeReply: `${123}`,
 
       retweetImg: retweet,
-      numberRetweet: `${123}k`,
+      numberRetweet: `${123}`,
 
       reactImg: react,
-      numberReact:`${1234}k`,
+      numberReact:`${1234}`,
 
       btnDowlandImg: btndowland,
     },
@@ -86,13 +86,13 @@ const data = [
 
     btn:{
       replyImg: reply,
-      numbeeReply:`${1253}k`,
+      numbeeReply:`${1253}`,
 
       retweetImg: retweet,
-      numberRetweet:`${1237}k`,
+      numberRetweet:`${1237}`,
 
       reactImg: react,
-      numberReact:`${1237}M`,
+      numberReact:`${1237}`,
 
       btnDowlandImg: btndowland,
     },
@@ -109,13 +109,13 @@ const data = [
 
     btn: {
       replyImg: reply,
-      numbeeReply:`${1231}k`,
+      numbeeReply:`${1231}`,
 
       retweetImg: retweet,
-      numberRetweet:`${1230}k`,
+      numberRetweet:`${1230}`,
 
       reactImg: react,
-      numberReact:`${1231}k`,
+      numberReact:`${1231}`,
 
       btnDowlandImg: btndowland,
     },

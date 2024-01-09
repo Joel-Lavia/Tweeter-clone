@@ -3,7 +3,6 @@ import data from "../Models/Data";
 import Avatar from "./Avatar";
 import TweetLike from "./TweetLike";
 function Twett() {
-const [count,setCount] = useState(null);
 
   const tweet = data.map((dataAll) => {
     return (

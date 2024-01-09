@@ -312,3 +312,16 @@ margin-top:1.5em;
 .trendsPage{
 margin-top:1em;
 }
+.fleximgProfil{
+display:flex;
+justify-content: space-evenly;
+gap:16em;
+
+
+}
+.editProfilbtn{
+line-height:9em;
+}
+.sectionProfilAvatar{
+
+}

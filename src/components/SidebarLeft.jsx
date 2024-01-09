@@ -10,6 +10,7 @@ import profilePhoto from "../images/profile-photo.png"
 import more from "../icons/More.png";
 import ProfilSetting from "./ProfilSetting";
 import privateImg from "../images/Private.png"
+import { Link } from "react-router-dom";
 
 
 function SidebarLeft() {
@@ -18,15 +19,15 @@ function SidebarLeft() {
     <section className="sidebarSection">
 
      <div className="sidebar">
-      <button className="sidebarbtn"><img src={tweet} alt="btn Tweeter" /></button>
-      <button className="sidebarbtn"><img src={home} alt="btn home" />Home</button>
-      <button className="sidebarbtn"><img src={explor} alt="btn explor" />Explore</button>
-      <button className="sidebarbtn"><img src={notification} alt="btn notification" />Notifications</button>
-      <button className="sidebarbtn"><img src={messages} alt="btn messages" />Messages</button>
-      <button className="sidebarbtn"><img src={bookMark} alt="btn bookmarks" />Bookmarks</button>
-      <button className="sidebarbtn"><img src={list} alt="btn twett list" />Lists</button>
-      <button className="sidebarbtn"><img src={profilTweet} alt="btn profil tweet" />Profil</button>
-      <button className="sidebarbtn"><img src={more} alt="btn more" />More</button>
+    <Link to={'/'}><button className="sidebarbtn"><img src={tweet} alt="btn Tweeter" /></button></Link>
+    <Link to={'/'}><button className="sidebarbtn"><img src={home} alt="btn home" />Home</button></Link>
+    <Link to={'/Explore'}><button className="sidebarbtn"><img src={explor} alt="btn explor" />Explore</button></Link>
+    <Link to={'/Notifications'}><button className="sidebarbtn"><img src={notification} alt="btn notification" />Notifications</button></Link>
+    <Link to={'/Messages'}><button className="sidebarbtn"><img src={messages} alt="btn messages" />Messages</button></Link>
+    <Link to={'/Bookmarks'}><button className="sidebarbtn"><img src={bookMark} alt="btn bookmarks" />Bookmarks</button></Link>
+    <Link to={'/Lists'}><button className="sidebarbtn"><img src={list} alt="btn twett list" />Lists</button></Link>
+    <Link to={'/Profil'}><button className="sidebarbtn"><img src={profilTweet} alt="btn profil tweet" />Profil</button></Link>
+    <Link to={'/More'}><button className="sidebarbtn"><img src={more} alt="btn more" />More</button></Link>
       <button className="button">Tweet</button>
      </div>
     

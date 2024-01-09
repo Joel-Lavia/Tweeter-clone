@@ -11,10 +11,9 @@ export default function App() {
     <Layout>
       <SidebarLeft />
       <Home />
-
-      <p className="trendsPage">
+      <div className="trendsPage">
       <Trends/>
-      </p>
+      </div>
     </Layout>
   );
 }

@@ -16,7 +16,7 @@ setLike(false);
  } 
  return(
 <div>
-    <button className='tweet-action' onClick={situationCountLike}><img src={likeImg} alt="likeImg" />{counter+nbr}</button>
+    <button className='tweet-action' onClick={ ()=> situationCountLike()}><img src={likeImg} alt="likeImg" />{counter+nbr}</button>
  </div>
  );
 }

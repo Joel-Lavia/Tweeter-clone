@@ -64,13 +64,13 @@ const data = [
 
     btn: {
       replyImg: reply,
-      numbeeReply: "6.8k",
+      numbeeReply: `${123}k`,
 
       retweetImg: retweet,
-      numberRetweet: "36.k",
+      numberRetweet: `${123}k`,
 
       reactImg: react,
-      numberReact: "267.1k",
+      numberReact:`${1234}k`,
 
       btnDowlandImg: btndowland,
     },
@@ -84,15 +84,15 @@ const data = [
     lienTweet: "@Tweeter . oct 4",
     tweetSetence: "hello literally everyone",
 
-    btn: {
+    btn:{
       replyImg: reply,
-      numbeeReply: "118.k",
+      numbeeReply:`${1253}k`,
 
       retweetImg: retweet,
-      numberRetweet: "785.4k",
+      numberRetweet:`${1237}k`,
 
       reactImg: react,
-      numberReact: "3.3M",
+      numberReact:`${1237}M`,
 
       btnDowlandImg: btndowland,
     },
@@ -109,13 +109,13 @@ const data = [
 
     btn: {
       replyImg: reply,
-      numbeeReply: "118.7k",
+      numbeeReply:`${1231}k`,
 
       retweetImg: retweet,
-      numberRetweet: "785.4k",
+      numberRetweet:`${1230}k`,
 
       reactImg: react,
-      numberReact: "3.3M",
+      numberReact:`${1231}k`,
 
       btnDowlandImg: btndowland,
     },

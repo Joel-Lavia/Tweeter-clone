@@ -1,6 +1,10 @@
+import { useState } from "react";
 import data from "../Models/Data";
 import Avatar from "./Avatar";
+import TweetLike from "./TweetLike";
 function Twett() {
+const [count,setCount] = useState(null);
+
   const tweet = data.map((dataAll) => {
     return (
       <div key={dataAll.id} className="tweet">
@@ -27,18 +31,9 @@ function Twett() {
           
           {/*Tweetbutton*/}
           <div className="tweet-actions">
-            <button className="tweet-action">
-              <img src={dataAll.btn.replyImg} alt="replyimg" />
-              {dataAll.btn.numbeeReply}
-            </button>
-            <button className="tweet-action">
-              <img src={dataAll.btn.retweetImg} alt="button retweet" />
-              {dataAll.btn.numberRetweet}
-            </button>
-            <button className="tweet-action">
-              <img src={dataAll.btn.reactImg} alt="rection button" />
-              {dataAll.btn.numberReact}
-            </button>
+            <TweetLike likeImg={dataAll.btn.replyImg}/>
+            <TweetLike likeImg={dataAll.btn.retweetImg}/>
+            <TweetLike likeImg={dataAll.btn.reactImg}/>
             <button className="tweet-action">
               <img src={dataAll.btn.btnDowlandImg} alt="button Dowland" />
             </button>

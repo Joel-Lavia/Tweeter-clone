@@ -5,19 +5,19 @@ function Twett() {
 
   const tweet = data.map((dataAll) => {
     return (
-      <div key={dataAll.id} className="tweet">
+      <div key={dataAll.id} className="flex py-4	border-b border-b-gray-900">
         {/*Composant des divers avatar de la page*/}
         <Avatar avatarImg={dataAll.avatar} />
 
         {/*differents tweets de la page*/}
-        <div className="tweet-body">
+        <div className="flex flex-col	gap-2	">
           {/*differents tweets-title de la page*/}
-          <p className="tweet-title">
-            <h1 className="tweet-title-author">{dataAll.nomTweet}</h1>
+          <p className="flex text-base	gap-2	">
+            <h1 className="text-base">{dataAll.nomTweet}</h1>
             <a href="#">
               <img src={dataAll.certification} alt="group" />
             </a>
-            <span className="tweet-title-details">{dataAll.lienTweet}</span>
+            <span className="text-neutral-800	">{dataAll.lienTweet}</span>
           </p>
           {/*differents phrase de la page*/}
           <p className="tweet-text">{dataAll.tweetSetence}</p>

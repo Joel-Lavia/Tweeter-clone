@@ -28,10 +28,8 @@ function SidebarLeft() {
     <Link to={'/Lists'}><button className="sidebarbtn"><img src={list} alt="btn twett list" />Lists</button></Link>
     <Link to={'/Profil'}><button className="sidebarbtn"><img src={profilTweet} alt="btn profil tweet" />Profil</button></Link>
     <Link to={'/More'}><button className="sidebarbtn"><img src={more} alt="btn more" />More</button></Link>
-      <button className="button">Tweet</button>
-     </div>
-    
-     
+    <button className="button">Tweet</button>
+     </div>    
 <ProfilSetting imgProfilSidebaLeft={profilePhoto} namProfil={'Bradley Ortiz'} details={'@bradley_'} iconProfil={privateImg} />
 
     </section>

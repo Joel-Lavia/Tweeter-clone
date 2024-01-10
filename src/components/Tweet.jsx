@@ -17,7 +17,7 @@ function Twett() {
             <a href="#">
               <img src={dataAll.certification} alt="group" />
             </a>
-            <span className="text-neutral-800	">{dataAll.lienTweet}</span>
+            <span className="text-neutral-600	">{dataAll.lienTweet}</span>
           </p>
           {/*differents phrase de la page*/}
           <p className="tweet-text">{dataAll.tweetSetence}</p>

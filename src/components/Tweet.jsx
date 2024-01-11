@@ -20,7 +20,7 @@ function Twett() {
             <span className="text-neutral-600	">{dataAll.lienTweet}</span>
           </p>
           {/*differents phrase de la page*/}
-          <p className="text-white-700 text-base">{dataAll.tweetSetence}</p>
+          <p className="text-white-700 text-base ">{dataAll.tweetSetence}</p>
 
           {/*differents tweet-images de la page*/}
           <a href="#" className="pt-8	 pr-4	pb-4	pl-4		">
@@ -28,11 +28,11 @@ function Twett() {
           </a>
           
           {/*Tweetbutton*/}
-          <div className="tweet-actions">
+          <div className="flex justify-center items-center gap-20 ">
             <TweetLike likeImg={dataAll.btn.replyImg} nbr={dataAll.btn.numbeeReply}/>
             <TweetLike likeImg={dataAll.btn.retweetImg} nbr={dataAll.btn.numberRetweet}/>
             <TweetLike likeImg={dataAll.btn.reactImg} nbr={dataAll.btn.numberReact}/>
-            <button className="tweet-action">
+            <button>
               <img src={dataAll.btn.btnDowlandImg} alt="button Dowland" />
             </button>
           </div>

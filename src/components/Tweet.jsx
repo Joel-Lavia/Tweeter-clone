@@ -20,11 +20,11 @@ function Twett() {
             <span className="text-neutral-600	">{dataAll.lienTweet}</span>
           </p>
           {/*differents phrase de la page*/}
-          <p className="tweet-text">{dataAll.tweetSetence}</p>
+          <p className="text-white-700 text-base">{dataAll.tweetSetence}</p>
 
           {/*differents tweet-images de la page*/}
-          <a href="#" className="tweet-image">
-            <img src={dataAll.tweetimg} alt="" />
+          <a href="#" className="pt-8	 pr-4	pb-4	pl-4		">
+            <img src={dataAll.tweetimg} alt="" className="max-w-full h-auto		rounded-3xl			" />
           </a>
           
           {/*Tweetbutton*/}

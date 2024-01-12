@@ -1,5 +1,6 @@
 import data from "../Models/Data";
 import Avatar from "./Avatar";
+import TweetForm from "./TweetForm";
 import TweetLike from "./TweetLike";
 function Twett() {
 
@@ -41,6 +42,7 @@ function Twett() {
     );
   });
 
-  return <section>{tweet}</section>;
+  return <section>{tweet}
+  </section>;
 }
 export default Twett;

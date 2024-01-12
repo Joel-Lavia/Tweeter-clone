@@ -4,7 +4,7 @@ import BtnEditProfil from "./BtnEditProfil";
 function ProfilAvatar() {
  return(
 <main className="timeline">
- <section className="bg-indigo-700 mt-16">
+ <section className="">
 
 <div className="fleximgProfil">
 <div className="">

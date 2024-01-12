@@ -9,6 +9,7 @@ import react from "../images/React.png";
 import btndowland from "../images/Buton.png";
 
 const data = [
+
   {
     id: 1,
     avatar: cnn,

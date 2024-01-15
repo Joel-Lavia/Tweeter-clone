@@ -3,29 +3,26 @@ import gif from "../images/Gif.png";
 import pol from "../images/Poll.png";
 import emoji from "../images/Emoji.png";
 import schedule from "../images/Schedule.png";
-import { useState } from "react";
+import { useContext, useState } from "react";
+
 
 function TweetForm() {
-const [inputValue, setInputValue] = useState("");
-const [result, setResult] = useState(""); 
-const renderValue = (e) =>{
-e.preventDefault();
-setResult(inputValue)
-}
-const renderResult = (e) =>{
-setInputValue(e.target.value)
-setResult("")
-}
-return(
-<section>
-<form onSubmit={renderValue} action="" className="tweet-editor-form">
+  // const Context = useContext(ContextGlobal);
+  const [textinput,setText] = useState('');
+  const textValue = (e) =>{
+    setText(e.target.value)
+  } 
+  return (
+    <section>
+      <form action="" className="tweet-editor-form">
         <input
           type="text"
-          name=""
-          id=""
+          name="textinput"
+          id="textinput"
           className="tweet-editor-input"
           placeholder="What's happening ?"
-          value={inputValue}
+          onChange={textValue}
+         value={textinput}
         />
         <div className="tweet-editor-buttons">
           <div className="tweet-editor-actions">
@@ -45,10 +42,10 @@ return(
               <img src={schedule} alt="button dowlan img" />
             </button>
           </div>
-          <button type="submit" className="button ml-80 mb-5">Tweet</button>
+          {/* <button className="button ml-80 mb-5">Tweet</button> */}
         </div>
-    </form>
-</section>
-)
+      </form>
+    </section>
+  );
 }
-export default TweetForm
+export default TweetForm;

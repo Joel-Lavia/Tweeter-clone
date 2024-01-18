@@ -3,16 +3,19 @@ import gif from "../images/Gif.png";
 import pol from "../images/Poll.png";
 import emoji from "../images/Emoji.png";
 import schedule from "../images/Schedule.png";
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import { ContextGlobal } from "./DataSharing";
+import data from "../Models/Data";
 
 function TweetForm() {
-  const [inputValue,setInputValue] = useState('');
+
+  const {inputValue,setInputValue,addTweet} = useContext(ContextGlobal); 
   const textValue = (e) =>{
     setInputValue(e.target.value)
+  }
+  const addClick = () => {
+ addTweet();
   } 
-const constex = () => useContext(ContextGlobal);
-
   
   return (
     <section>
@@ -44,7 +47,7 @@ const constex = () => useContext(ContextGlobal);
               <img src={schedule} alt="button dowlan img" />
             </button>
           </div>
-          <button className="button ml-80 mb-5" onClick={(e) => {e.preventDefault();constex()}}>Tweet</button>
+          <button className="button ml-80 mb-5" onClick={(e) => {e.preventDefault(), addClick(), console.log(data);}}>Tweet</button>
         </div>
       </form>
     </section>

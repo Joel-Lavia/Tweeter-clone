@@ -1,7 +1,7 @@
 import data from "../Models/Data";
 import Avatar from "./Avatar";
 import TweetLike from "./TweetLike";
-import {} from './TweetForm'
+
 function Twett() {
 
   const tweet = data.map((dataAll) => {
@@ -42,7 +42,8 @@ function Twett() {
     );
   });
 
-  return <section>{tweet}
+  return <section>
+    {tweet}
   </section>;
 }
 export default Twett;

@@ -1,10 +1,12 @@
+import { useContext } from "react";
 import data from "../Models/Data";
 import Avatar from "./Avatar";
 import TweetLike from "./TweetLike";
+import { ContextGlobal } from "./DataSharing";
 
 function Twett() {
-
-  const tweet = data.map((dataAll) => {
+const context = useContext(ContextGlobal);
+  const tweet = context.dataValue.map((dataAll) => {
     return (
       <div key={dataAll.id} className="flex py-4	border-b border-b-gray-900">
         {/*Composant des divers avatar de la page*/}

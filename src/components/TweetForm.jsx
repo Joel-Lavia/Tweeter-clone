@@ -3,20 +3,19 @@ import gif from "../images/Gif.png";
 import pol from "../images/Poll.png";
 import emoji from "../images/Emoji.png";
 import schedule from "../images/Schedule.png";
-import { useContext} from "react";
+import { useContext } from "react";
 import { ContextGlobal } from "./DataSharing";
 import data from "../Models/Data";
 
 function TweetForm() {
-
-  const {inputValue,setInputValue,addTweet} = useContext(ContextGlobal); 
-  const textValue = (e) =>{
-    setInputValue(e.target.value)
-  }
+  const { inputValue, setInputValue, addTweet } = useContext(ContextGlobal);
+  const textValue = (e) => {
+    setInputValue(e.target.value);
+  };
   const addClick = () => {
- addTweet();
-  } 
-  
+    addTweet();
+  };
+
   return (
     <section>
       <form action="" className="tweet-editor-form">
@@ -27,7 +26,7 @@ function TweetForm() {
           className="tweet-editor-input"
           placeholder="What's happening ?"
           onChange={textValue}
-         value={inputValue}
+          value={inputValue}
         />
         <div className="tweet-editor-buttons">
           <div className="tweet-editor-actions">
@@ -47,7 +46,14 @@ function TweetForm() {
               <img src={schedule} alt="button dowlan img" />
             </button>
           </div>
-          <button className="button ml-80 mb-5" onClick={(e) => {e.preventDefault(), addClick(), console.log(data);}}>Tweet</button>
+          <button
+            className="button ml-80 mb-5"
+            onClick={(e) => {
+              e.preventDefault(); addClick(); console.log(data);
+            }}
+          >
+            Tweet
+          </button>
         </div>
       </form>
     </section>

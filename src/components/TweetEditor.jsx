@@ -7,9 +7,7 @@ function TweetEditor() {
   return (
     <section className="tweet-editor">
       <Avatar avatarImg={imgProfil} />
-      <DataSharing>
       <TweetForm/>
-      </DataSharing>
     </section>
   );
 }

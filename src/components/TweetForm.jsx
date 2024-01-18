@@ -4,14 +4,16 @@ import pol from "../images/Poll.png";
 import emoji from "../images/Emoji.png";
 import schedule from "../images/Schedule.png";
 import { useContext, useState } from "react";
-
+import { ContextGlobal } from "./DataSharing";
 
 function TweetForm() {
-  // const Context = useContext(ContextGlobal);
-  const [textinput,setText] = useState('');
+  const [inputValue,setInputValue] = useState('');
   const textValue = (e) =>{
-    setText(e.target.value)
+    setInputValue(e.target.value)
   } 
+const constex = () => useContext(ContextGlobal);
+
+  
   return (
     <section>
       <form action="" className="tweet-editor-form">
@@ -22,7 +24,7 @@ function TweetForm() {
           className="tweet-editor-input"
           placeholder="What's happening ?"
           onChange={textValue}
-         value={textinput}
+         value={inputValue}
         />
         <div className="tweet-editor-buttons">
           <div className="tweet-editor-actions">
@@ -42,7 +44,7 @@ function TweetForm() {
               <img src={schedule} alt="button dowlan img" />
             </button>
           </div>
-          {/* <button className="button ml-80 mb-5">Tweet</button> */}
+          <button className="button ml-80 mb-5" onClick={(e) => {e.preventDefault();constex()}}>Tweet</button>
         </div>
       </form>
     </section>

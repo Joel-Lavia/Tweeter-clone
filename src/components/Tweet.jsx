@@ -1,7 +1,7 @@
 import data from "../Models/Data";
 import Avatar from "./Avatar";
-import TweetForm from "./TweetForm";
 import TweetLike from "./TweetLike";
+import {} from './TweetForm'
 function Twett() {
 
   const tweet = data.map((dataAll) => {

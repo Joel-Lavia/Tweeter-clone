@@ -1,6 +1,5 @@
 import imgProfil from "../images/profile-photo.png";
 import Avatar from "./Avatar";
-import DataSharing from "./DataSharing";
 import TweetForm from "./TweetForm";
 
 function TweetEditor() {

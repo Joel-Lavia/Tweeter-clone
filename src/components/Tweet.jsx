@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import data from "../Models/Data";
 import Avatar from "./Avatar";
 import TweetLike from "./TweetLike";
-function Twett() {
+import { ContextGlobal } from "./DataSharing";
 
-  const tweet = data.map((dataAll) => {
+function Twett() {
+const context = useContext(ContextGlobal);
+  const tweet = context.dataValue.map((dataAll) => {
     return (
       <div key={dataAll.id} className="flex py-4	border-b border-b-gray-900">
         {/*Composant des divers avatar de la page*/}
@@ -41,6 +44,8 @@ function Twett() {
     );
   });
 
-  return <section>{tweet}</section>;
+  return <section>
+    {tweet}
+  </section>;
 }
 export default Twett;

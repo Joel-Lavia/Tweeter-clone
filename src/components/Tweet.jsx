@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import data from "../Models/Data";
 import Avatar from "./Avatar";
 import TweetLike from "./TweetLike";
 import { ContextGlobal } from "./DataSharing";
@@ -32,7 +31,7 @@ const context = useContext(ContextGlobal);
           
           {/*Tweetbutton*/}
           <div className="flex justify-center items-center gap-20 ">
-            <TweetLike likeImg={dataAll.btn.replyImg} nbr={dataAll.btn.numbeeReply}/>
+            <TweetLike likeImg={<dataAll.btn.replyImg/>} nbr={dataAll.btn.numbeeReply}/>
             <TweetLike likeImg={dataAll.btn.retweetImg} nbr={dataAll.btn.numberRetweet}/>
             <TweetLike likeImg={dataAll.btn.reactImg} nbr={dataAll.btn.numberReact}/>
             <button>

@@ -3,10 +3,10 @@ import sheet from "../images/tweet-image.png";
 import cnn from "../images/tweet-profile-photo.png";
 import nytimes from "../images/Tweet2.png";
 import twetterMascote from "../images/MascoteImg.png";
-import reply from "../images/Reply.png";
-import retweet from "../images/Retweet.png";
-import react from "../images/React.png";
-import btndowland from "../images/Buton.png";
+import { FaRegComment } from "react-icons/fa";
+import { LiaRetweetSolid } from "react-icons/lia";
+import { PiDownloadSimpleLight } from "react-icons/pi";
+import { CiHeart } from "react-icons/ci";
 
 const data = [
 
@@ -19,16 +19,16 @@ const data = [
     tweetSetence:
       'President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a "major breakthrough" that would serve to both strengthen the US steel industry and combat the global climate crisis.',
     btn: {
-      replyImg: reply,
+      replyImg:FaRegComment,
       numbeeReply: 57,
 
-      retweetImg: retweet,
+      retweetImg:LiaRetweetSolid,
       numberRetweet: 144,
 
-      reactImg: react,
+      reactImg:CiHeart,
       numberReact: 123,
 
-      btnDowlandImg: btndowland,
+      btnDowlandImg:PiDownloadSimpleLight
     },
   },
 
@@ -43,16 +43,16 @@ const data = [
     tweetimg: sheet,
 
     btn: {
-      replyImg: reply,
-      numbeeReply: 19,
+      replyImg:FaRegComment,
+      numbeeReply: 112,
 
-      retweetImg: retweet,
-      numberRetweet: 48,
+      retweetImg:LiaRetweetSolid,
+      numberRetweet: 76,
 
-      reactImg: react,
-      numberReact: 482,
+      reactImg:CiHeart,
+      numberReact: 4872,
 
-      btnDowlandImg: btndowland,
+      btnDowlandImg:PiDownloadSimpleLight,
     },
   },
   {
@@ -64,16 +64,16 @@ const data = [
     tweetSetence: "BIG NEWS lol jk still Twitter",
 
     btn: {
-      replyImg: reply,
-      numbeeReply: 123,
+      replyImg:FaRegComment,
+      numbeeReply: 159,
 
-      retweetImg: retweet,
-      numberRetweet: 123,
+      retweetImg:LiaRetweetSolid,
+      numberRetweet: 98,
 
-      reactImg: react,
-      numberReact:1234,
+      reactImg:CiHeart,
+      numberReact: 21,
 
-      btnDowlandImg: btndowland,
+      btnDowlandImg:PiDownloadSimpleLight,
     },
   },
 
@@ -86,16 +86,16 @@ const data = [
     tweetSetence: "hello literally everyone",
 
     btn:{
-      replyImg: reply,
-      numbeeReply:1253,
+      replyImg:FaRegComment,
+      numbeeReply: 178,
 
-      retweetImg: retweet,
-      numberRetweet:1237,
+      retweetImg:LiaRetweetSolid,
+      numberRetweet: 458,
 
-      reactImg: react,
-      numberReact:1237,
+      reactImg:CiHeart,
+      numberReact: 492,
 
-      btnDowlandImg: btndowland,
+      btnDowlandImg:PiDownloadSimpleLight,
     },
   },
 
@@ -109,16 +109,16 @@ const data = [
     tweetimg: sheet,
 
     btn: {
-      replyImg: reply,
-      numbeeReply:1231,
+      replyImg:FaRegComment,
+      numbeeReply: 1912,
 
-      retweetImg: retweet,
-      numberRetweet:1230,
+      retweetImg:LiaRetweetSolid,
+      numberRetweet: 4458,
 
-      reactImg: react,
-      numberReact:1231,
+      reactImg:CiHeart,
+      numberReact: 4825,
 
-      btnDowlandImg: btndowland,
+      btnDowlandImg:PiDownloadSimpleLight,
     },
   },
 ];

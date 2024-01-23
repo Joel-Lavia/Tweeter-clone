@@ -3,10 +3,10 @@ import data from "../Models/Data";
 import profilePhoto from '../images/profile-photo.png'
 import group from "../images/Group.png";
 
-import reply from "../images/Reply.png";
-import retweet from "../images/Retweet.png";
-import react from "../images/React.png";
-import btndowland from "../images/Buton.png";
+import { FaRegComment } from "react-icons/fa";
+import { LiaRetweetSolid } from "react-icons/lia";
+import { PiDownloadSimpleLight } from "react-icons/pi";
+import { CiHeart } from "react-icons/ci";
 
 
 export const ContextGlobal = createContext();
@@ -27,17 +27,17 @@ const addTweet = () => {
         lienTweet: "@bradley_",
         tweetSetence:inputValue,
         btn: {
-          replyImg: reply,
-          numbeeReply:0,
-    
-          retweetImg: retweet,
-          numberRetweet:0,
-    
-          reactImg: react,
-          numberReact:0,
-    
-          btnDowlandImg: btndowland,
-        },
+          replyImg:FaRegComment,
+      numbeeReply: 57,
+
+      retweetImg:LiaRetweetSolid,
+      numberRetweet: 144,
+
+      reactImg:CiHeart,
+      numberReact: 123,
+
+      btnDowlandImg:PiDownloadSimpleLight,
+        }
 
       }
     )

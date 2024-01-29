@@ -2,6 +2,8 @@ import { useContext } from "react";
 import Avatar from "./Avatar";
 import TweetLike from "./TweetLike";
 import { ContextGlobal } from "./DataSharing";
+import { PiDownloadSimpleLight } from "react-icons/pi";
+import data from "../Models/Data";
 
 function Twett() {
 const context = useContext(ContextGlobal);
@@ -31,11 +33,11 @@ const context = useContext(ContextGlobal);
           
           {/*Tweetbutton*/}
           <div className="flex justify-center items-center gap-20 ">
-            <TweetLike likeImg={<dataAll.btn.replyImg/>} nbr={dataAll.btn.numbeeReply}/>
-            <TweetLike likeImg={dataAll.btn.retweetImg} nbr={dataAll.btn.numberRetweet}/>
-            <TweetLike likeImg={dataAll.btn.reactImg} nbr={dataAll.btn.numberReact}/>
+            <TweetLike commentbtn={<dataAll.btn.replyImg/>} nbr={dataAll.btn.numbeeReply}/>
+            <TweetLike commentbtn={<dataAll.btn.retweetImg/>} nbr={dataAll.btn.numberRetweet}/>
+            <TweetLike commentbtn={<dataAll.btn.reactImg/>} nbr={dataAll.btn.numberReact}/>
             <button>
-              <img src={dataAll.btn.btnDowlandImg} alt="button Dowland" />
+            <PiDownloadSimpleLight color="#4B5563"/>
             </button>
           </div>
         </div>

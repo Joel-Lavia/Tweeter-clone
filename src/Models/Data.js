@@ -28,7 +28,8 @@ const data = [
       reactImg:CiHeart,
       numberReact: 123,
 
-      btnDowlandImg:PiDownloadSimpleLight
+      btnDowlandImg:PiDownloadSimpleLight,
+      numberDowland :12
     },
   },
 

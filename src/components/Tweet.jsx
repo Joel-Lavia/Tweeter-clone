@@ -33,11 +33,11 @@ const context = useContext(ContextGlobal);
           
           {/*Tweetbutton*/}
           <div className="flex justify-center items-center gap-20 ">
-            <TweetLike commentbtn={<dataAll.btn.replyImg/>} nbr={dataAll.btn.numbeeReply}/>
-            <TweetLike commentbtn={<dataAll.btn.retweetImg/>} nbr={dataAll.btn.numberRetweet}/>
-            <TweetLike commentbtn={<dataAll.btn.reactImg/>} nbr={dataAll.btn.numberReact}/>
+            <TweetLike commentbtn={<dataAll.btn.replyImg fontSize={"1.4em"} color="#ff0000" />} nbr={dataAll.btn.numbeeReply}/>
+            <TweetLike commentbtn={<dataAll.btn.retweetImg fontSize={"1.4em"} />} nbr={dataAll.btn.numberRetweet}/>
+            <TweetLike commentbtn={<dataAll.btn.reactImg fontSize={"1.4em"} />} nbr={dataAll.btn.numberReact}/>
             <button>
-            <PiDownloadSimpleLight color="#4B5563"/>
+            <PiDownloadSimpleLight color="#4B5563" fontSize={"1.4em"}  />
             </button>
           </div>
         </div>

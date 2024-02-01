@@ -49,7 +49,9 @@ function TweetForm() {
           <button
             className="button ml-80 mb-5"
             onClick={(e) => {
-              e.preventDefault(); addClick(); console.log(data);
+              e.preventDefault(); 
+              addClick(); 
+              console.log(data);
             }}
           >
             Tweet

@@ -2,9 +2,9 @@
 
     {
       "id": 1,
-      "avatar": "cnn",
+      "avatar": "https://drive.google.com/file/d/17J9ukfqtAxAGaaxWthfYc_kwMJ5Lv5c-/view?usp=sharing",
       "nomTweet": "CNN",
-      "certification": "group",
+      "certification": "https://drive.google.com/file/d/1AMYgSIpgPeFDa5D2jW8-lmWehYCRVDHF/view?usp=sharing",
       "lienTweet": "@CNN . 7m",
       "tweetSetence":
         "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
@@ -25,9 +25,9 @@
   
     {
       "id": 2,
-      "avatar": "nytimes",
+      "avatar": "https://drive.google.com/file/d/1Fm8iAdtU0PDEl7iQwazQjp_fAt7GNBaM/view?usp=sharing",
       "nomTweet": "The New York Times",
-      "certification": "group",
+      "certification": "https://drive.google.com/file/d/1AMYgSIpgPeFDa5D2jW8-lmWehYCRVDHF/view?usp=sharing",
       "lienTweet": "@nytimes . 2h",
       "tweetSetence":
         "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
@@ -48,9 +48,9 @@
     },
     {
       "id": 3,
-      "avatar": "twetterMascote",
+      "avatar": "https://drive.google.com/file/d/1kYSStBXDtu4VOrUsKTfotGBG4MTyDx4e/view?usp=sharing",
       "nomTweet": "Tweeter",
-      "certification": "group",
+      "certification": "https://drive.google.com/file/d/1AMYgSIpgPeFDa5D2jW8-lmWehYCRVDHF/view?usp=sharing",
       "lienTweet": "@Tweeter . oct 29",
       "tweetSetence": "BIG NEWS lol jk still Twitter",
   
@@ -71,8 +71,8 @@
     {
       "id": 4,
       "nomTweet": "Tweeter",
-      "avatar": "twetterMascote",
-      "certification": "group",
+      "avatar": "https://drive.google.com/file/d/1kYSStBXDtu4VOrUsKTfotGBG4MTyDx4e/view?usp=sharing",
+      "certification": "https://drive.google.com/file/d/1AMYgSIpgPeFDa5D2jW8-lmWehYCRVDHF/view?usp=sharing",
       "lienTweet": "@Tweeter . oct 4",
       "tweetSetence": "hello literally everyone",
   
@@ -92,9 +92,9 @@
   
     {
       "id": 5,
-      "avatar": "twetterMascote",
+      "avatar": "https://drive.google.com/file/d/1kYSStBXDtu4VOrUsKTfotGBG4MTyDx4e/view?usp=sharing",
       "nomTweet": "Tweeter",
-      "certification": "group",
+      "certification": "https://drive.google.com/file/d/1AMYgSIpgPeFDa5D2jW8-lmWehYCRVDHF/view?usp=sharing",
       "lienTweet": "@Tweeter . oct 4",
       "tweetSetence": "hello literally everyone",
       "tweetimg": "sheet",

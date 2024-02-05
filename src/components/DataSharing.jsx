@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import data from "../Models/Data";
+import Data from "../Models/Data.json";
 import profilePhoto from '../images/profile-photo.png'
 import group from "../images/Group.png";
 
@@ -12,7 +12,7 @@ import { CiHeart } from "react-icons/ci";
 export const ContextGlobal = createContext();
 
 function DataSharing({children}) {
-const [dataValue,setDataValue] = useState(data);
+const [dataValue,setDataValue] = useState(Data);
 const [inputValue,setInputValue] = useState('');
   
 const addTweet = () => {

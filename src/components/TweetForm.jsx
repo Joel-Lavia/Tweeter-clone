@@ -5,7 +5,6 @@ import emoji from "../images/Emoji.png";
 import schedule from "../images/Schedule.png";
 import { useContext } from "react";
 import { ContextGlobal } from "./DataSharing";
-import data from "../Models/Data";
 
 function TweetForm() {
   const { inputValue, setInputValue, addTweet } = useContext(ContextGlobal);
@@ -51,7 +50,6 @@ function TweetForm() {
             onClick={(e) => {
               e.preventDefault(); 
               addClick(); 
-              console.log(data);
             }}
           >
             Tweet

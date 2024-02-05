@@ -1,13 +1,7 @@
 import { createContext, useState } from "react";
-import Data from "../Models/Data.json";
+import Data from "../data/initial-data.json";
 import profilePhoto from '../images/profile-photo.png'
 import group from "../images/Group.png";
-
-import { FaRegComment } from "react-icons/fa";
-import { LiaRetweetSolid } from "react-icons/lia";
-import { PiDownloadSimpleLight } from "react-icons/pi";
-import { CiHeart } from "react-icons/ci";
-
 
 export const ContextGlobal = createContext();
 
@@ -27,16 +21,12 @@ const addTweet = () => {
         lienTweet: "@bradley_",
         tweetSetence:inputValue,
         btn: {
-          replyImg:FaRegComment,
-      numbeeReply: 57,
 
-      retweetImg:LiaRetweetSolid,
-      numberRetweet: 144,
+      numbeeReply: 0,
 
-      reactImg:CiHeart,
-      numberReact: 123,
+      numberRetweet:0,
 
-      btnDowlandImg:PiDownloadSimpleLight,
+      numberReact: 0,
         }
 
       }

@@ -1,16 +1,26 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import { BrowserRouter as Router,Routes, Route} from 'react-router-dom';
-import Profil from './pages/Profil';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Profil from "./pages/Profil";
+import DataSharing from "./components/DataSharing";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element:<App />
+  },
+  {
+    path:"/Profil",
+    element:<Profil />
+  }
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-  <Router>
- <Routes>
- <Route path='/' element={<App/>}/>
- <Route path='/Profil' element={<Profil/>}/>
- </Routes>
-  </Router>
+    <DataSharing>
+    <RouterProvider router={router}/>
+    </DataSharing>
   </React.StrictMode>
 );

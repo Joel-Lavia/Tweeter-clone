@@ -7,10 +7,8 @@ function Home() {
   return (
     <main className="timeline">
       <Header />
-      <DataSharing>
         <TweetEditor />
         <Twett />
-      </DataSharing>
     </main>
   );
 }

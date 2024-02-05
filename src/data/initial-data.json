@@ -6,19 +6,13 @@
     "nomTweet": "CNN",
     "certification":"https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
     "lienTweet": "@CNN . 7m",
-    "tweetSetence":
-      "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+    "tweetSetence":"President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
     "btn": {
-      "replyImg":"FaRegComment",
       "numbeeReply": 57,
-
-      "retweetImg":"LiaRetweetSolid",
       "numberRetweet": 144,
-
-      "reactImg":"CiHeart",
+      "color":9,
       "numberReact": 123,
 
-      "btnDowlandImg":"PiDownloadSimpleLight",
       "numberDowland" :12
     }
   },
@@ -34,16 +28,11 @@
     "tweetimg":"https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818125/Mes%20images%20Twetter/bumxst0fatm6q3q0hhso.png",
 
     "btn": {
-      "replyImg":"FaRegComment",
       "numbeeReply": 112,
-
-      "retweetImg":"LiaRetweetSolid",
       "numberRetweet": 76,
+      "color":3,
+      "numberReact": 4872
 
-      "reactImg":"CiHeart",
-      "numberReact": 4872,
-
-      "btnDowlandImg":"PiDownloadSimpleLight"
     }
   },
   {
@@ -55,16 +44,11 @@
     "tweetSetence": "BIG NEWS lol jk still Twitter",
 
     "btn": {
-      "replyImg":"FaRegComment",
       "numbeeReply": 159,
-
-      "retweetImg":"LiaRetweetSolid",
       "numberRetweet": 98,
+      "color":4,
+      "numberReact": 21
 
-      "reactImg":"CiHeart",
-      "numberReact": 21,
-
-      "btnDowlandImg":"PiDownloadSimpleLight"
     }
   },
 
@@ -77,16 +61,11 @@
     "tweetSetence": "hello literally everyone",
 
     "btn":{
-      "replyImg":"FaRegComment",
       "numbeeReply": 178,
-
-      "retweetImg":"LiaRetweetSolid",
       "numberRetweet": 458,
+      "color":5,
+      "numberReact": 492
 
-      "reactImg":"CiHeart",
-      "numberReact": 492,
-
-      "btnDowlandImg":"PiDownloadSimpleLight"
     }
   },
 
@@ -100,16 +79,11 @@
     "tweetimg":"https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818125/Mes%20images%20Twetter/bumxst0fatm6q3q0hhso.png",
 
     "btn": {
-      "replyImg":"FaRegComment",
       "numbeeReply": 1912,
-
-      "retweetImg":"LiaRetweetSolid",
       "numberRetweet": 4458,
+      "color":6,
+      "numberReact": 4825
 
-      "reactImg":"CiHeart",
-      "numberReact": 4825,
-
-      "btnDowlandImg":"PiDownloadSimpleLight"
     }
   }
 ]

@@ -1,13 +1,14 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Avatar from "./Avatar";
 import TweetLike from "./TweetLike";
 import { ContextGlobal } from "./DataSharing";
 import { PiDownloadSimpleLight } from "react-icons/pi";
-import Data from "../Models/Data.json";
-
+import { CiHeart } from "react-icons/ci";
+import { LiaRetweetSolid } from "react-icons/lia";
+import { FaRegComment } from "react-icons/fa";
 
 function Twett() {
-
+  
   const { dataValue } = useContext(ContextGlobal);
   const tweet = dataValue.map((dataAll) => {
     return (
@@ -33,27 +34,26 @@ function Twett() {
             <img
               src={dataAll.tweetimg}
               alt=""
-              className="max-w-full h-auto		rounded-3xl			"
-            />
+              className="max-w-full h-auto	rounded-3xl"/>
           </a>
 
           {/*Tweetbutton*/}
           <div className="flex justify-center items-center gap-20 ">
             <TweetLike
-              commentbtn={
-                <dataAll.btn.replyImg fontSize={"1.4em"} color="#ff0000" />
-              }
+              commentbtn={<FaRegComment fontSize={"1.4em"}/>}
               nbr={dataAll.btn.numbeeReply}
             />
-            <TweetLike
-              commentbtn={<dataAll.btn.retweetImg fontSize={"1.4em"} />}
+            <TweetLike 
+              commentbtn={<LiaRetweetSolid fontSize={"1.4em"}  />}
               nbr={dataAll.btn.numberRetweet}
             />
             <TweetLike
-              commentbtn={<dataAll.btn.reactImg fontSize={"1.4em"} />}
+              commentbtn={<CiHeart fontSize={"1.4em"}/>}
               nbr={dataAll.btn.numberReact}
-            />
-            <button>
+              
+              />
+
+            <button >
               <PiDownloadSimpleLight color="#4B5563" fontSize={"1.4em"} />
             </button>
           </div>

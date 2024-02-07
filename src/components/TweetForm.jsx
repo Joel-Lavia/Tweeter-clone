@@ -5,6 +5,7 @@ import emoji from "../images/Emoji.png";
 import schedule from "../images/Schedule.png";
 import { useContext } from "react";
 import { ContextGlobal } from "./DataSharing";
+import { useForm } from "react-hook-form";
 
 function TweetForm() {
   const { inputValue, setInputValue, addTweet } = useContext(ContextGlobal);
@@ -14,6 +15,12 @@ function TweetForm() {
   const addClick = () => {
     addTweet();
   };
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
   return (
     <section>
@@ -48,8 +55,8 @@ function TweetForm() {
           <button
             className="button ml-80 mb-5"
             onClick={(e) => {
-              e.preventDefault(); 
-              addClick(); 
+              e.preventDefault();
+              addClick();
             }}
           >
             Tweet

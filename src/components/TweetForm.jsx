@@ -6,12 +6,13 @@ import schedule from "../images/Schedule.png";
 import { useContext } from "react";
 import { ContextGlobal } from "./DataSharing";
 import { useForm } from "react-hook-form";
+// import { data } from "autoprefixer";
 
 function TweetForm() {
-  const { inputValue, setInputValue, addTweet } = useContext(ContextGlobal);
-  const textValue = (e) => {
-    setInputValue(e.target.value);
-  };
+  const {addTweet } = useContext(ContextGlobal);
+  // const textValue = (e) => {
+  //   setInputValue(e.target.value);
+  // };
   const addClick = () => {
     addTweet();
   };
@@ -24,16 +25,21 @@ function TweetForm() {
 
   return (
     <section>
-      <form action="" className="tweet-editor-form">
+      <form
+        onSubmit={handleSubmit((data) => addClick(data,console.log(data)))}
+        className="tweet-editor-form"
+      >
         <input
           type="text"
           name="textinput"
           id="textinput"
           className="tweet-editor-input"
           placeholder="What's happening ?"
-          onChange={textValue}
-          value={inputValue}
+          // onChange={textValue}
+          // value={inputValue}
+          {...register("textinput", { require: true})}
         />
+        {errors.textinput && <p className="text-red-600">Tweet</p>}
         <div className="tweet-editor-buttons">
           <div className="tweet-editor-actions">
             <button>
@@ -52,15 +58,7 @@ function TweetForm() {
               <img src={schedule} alt="button dowlan img" />
             </button>
           </div>
-          <button
-            className="button ml-80 mb-5"
-            onClick={(e) => {
-              e.preventDefault();
-              addClick();
-            }}
-          >
-            Tweet
-          </button>
+          <button className="button ml-80 mb-5">Tweet</button>
         </div>
       </form>
     </section>

@@ -9,7 +9,7 @@ import { useForm } from "react-hook-form";
 // import { data } from "autoprefixer";
 
 function TweetForm() {
-  const {addTweet } = useContext(ContextGlobal);
+  const { addTweet, dataValue, inputValue, setInputValue } = useContext(ContextGlobal);
   // const textValue = (e) => {
   //   setInputValue(e.target.value);
   // };
@@ -22,13 +22,13 @@ function TweetForm() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-
+  const onSubmit = (data) => {
+    addClick(data);
+    console.log(data);
+  };
   return (
     <section>
-      <form
-        onSubmit={handleSubmit((data) => addClick(data,console.log(data)))}
-        className="tweet-editor-form"
-      >
+      <form onSubmit={handleSubmit(onSubmit)} className="tweet-editor-form">
         <input
           type="text"
           name="textinput"
@@ -37,7 +37,7 @@ function TweetForm() {
           placeholder="What's happening ?"
           // onChange={textValue}
           // value={inputValue}
-          {...register("textinput", { require: true})}
+          {...register("textinput", { require: true })}
         />
         {errors.textinput && <p className="text-red-600">Tweet</p>}
         <div className="tweet-editor-buttons">

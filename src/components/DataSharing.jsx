@@ -1,44 +1,27 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import Data from "../data/initial-data.json";
-import profilePhoto from '../images/profile-photo.png'
-import group from "../images/Group.png";
+import axios from "axios";
 
 export const ContextGlobal = createContext();
 
-function DataSharing({children}) {
-const [dataValue,setDataValue] = useState(Data);
-const [inputValue,setInputValue] = useState('');
-  
-const addTweet = () => {
-  // if(inputValue !== ''){
+function DataSharing({ children }) {
+  const [dataValue, setDataValue] = useState(Data);
+
+  useEffect(() => {
+    axios.get("http://localhost:3000/1").then((response) => {
+      setDataValue(response.data);
+      console.log(response.data);
+    });
+  }, []);
+
+  const addTweet = (newTweet) => {
     const dataValueTemporary = dataValue;
-    dataValueTemporary.unshift(
-      {
-        id:dataValue.length+1,
-        avatar: profilePhoto,
-        nomTweet: "Bradley Ortiz",
-        certification: group,
-        lienTweet: "@bradley_",
-        tweetSetence:inputValue,
-        btn: {
-
-      numbeeReply: 0,
-
-      numberRetweet:0,
-
-      numberReact: 0,
-        }
-
-      }
-    )
-  setDataValue(dataValueTemporary)
-  setInputValue('');
+    setDataValue([newTweet, ...dataValueTemporary]);
   }
-// }
-return(
-<ContextGlobal.Provider value={{dataValue,addTweet,inputValue,setInputValue}}>
-{children}
-</ContextGlobal.Provider>
-) 
+  return (
+    <ContextGlobal.Provider value={{ dataValue, addTweet}}>
+      {children}
+    </ContextGlobal.Provider>
+  );
 }
-export default DataSharing
+export default DataSharing;

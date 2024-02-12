@@ -6,40 +6,70 @@ import schedule from "../images/Schedule.png";
 import { useContext } from "react";
 import { ContextGlobal } from "./DataSharing";
 import { useForm } from "react-hook-form";
+import profilePhoto from "../images/profile-photo.png";
+import group from "../images/Group.png";
+import axios from "axios";
 // import { data } from "autoprefixer";
+// import { data } from "autoprefixer";
+// import Data from "../data/initial-data.json";
 
 function TweetForm() {
-  const { addTweet, dataValue, inputValue, setInputValue } = useContext(ContextGlobal);
-  // const textValue = (e) => {
-  //   setInputValue(e.target.value);
+  const { addTweet,dataValue} = useContext(ContextGlobal);
+  
+
+  // const handelTweet = () => {
+  //   // axios.post("http://localhost:3000/", addTweet)
+  //   // .then((response) => setDataValue([response.data, ...dataValue]) );
+  //   setDataValue([addTweet, ...dataValue]);
   // };
-  const addClick = () => {
-    addTweet();
-  };
 
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
-  const onSubmit = (data) => {
-    addClick(data);
-    console.log(data);
-  };
+ 
+  const handelCreateTweet = (data) => {
+
+    const createTweet = {
+        id: dataValue.length + 1,
+        avatar: profilePhoto,
+        nomTweet: "Bradley Ortiz",
+        certification: group,
+        lienTweet: "@bradley_",
+        tweetSetence: data.tweet,
+        btn: {
+          numbeeReply: 0,
+  
+          numberRetweet: 0,
+  
+          numberReact: 0,
+        },
+  }
+  addTweet(createTweet);
+  reset();
+}
+
   return (
     <section>
-      <form onSubmit={handleSubmit(onSubmit)} className="tweet-editor-form">
+      <form
+        onSubmit={handleSubmit((data) => handelCreateTweet(data))}
+        className="tweet-editor-form"
+      >
         <input
           type="text"
           name="textinput"
           id="textinput"
           className="tweet-editor-input"
           placeholder="What's happening ?"
-          // onChange={textValue}
-          // value={inputValue}
-          {...register("textinput", { require: true })}
+          {...register("tweet", {
+            require: true,
+            maxLength: 25,
+          })}
         />
-        {errors.textinput && <p className="text-red-600">Tweet</p>}
+        {errors.tweet && <p className="text-red-600">Tweet</p>}
+
         <div className="tweet-editor-buttons">
           <div className="tweet-editor-actions">
             <button>
@@ -58,7 +88,7 @@ function TweetForm() {
               <img src={schedule} alt="button dowlan img" />
             </button>
           </div>
-          <button className="button ml-80 mb-5">Tweet</button>
+          <button type="submit" className="button ml-80 mb-5">Tweet</button>
         </div>
       </form>
     </section>

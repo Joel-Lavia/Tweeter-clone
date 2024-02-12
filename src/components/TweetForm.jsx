@@ -8,21 +8,10 @@ import { ContextGlobal } from "./DataSharing";
 import { useForm } from "react-hook-form";
 import profilePhoto from "../images/profile-photo.png";
 import group from "../images/Group.png";
-import axios from "axios";
-// import { data } from "autoprefixer";
-// import { data } from "autoprefixer";
-// import Data from "../data/initial-data.json";
 
 function TweetForm() {
   const { addTweet,dataValue} = useContext(ContextGlobal);
   
-
-  // const handelTweet = () => {
-  //   // axios.post("http://localhost:3000/", addTweet)
-  //   // .then((response) => setDataValue([response.data, ...dataValue]) );
-  //   setDataValue([addTweet, ...dataValue]);
-  // };
-
   const {
     register,
     handleSubmit,
@@ -31,7 +20,6 @@ function TweetForm() {
   } = useForm();
  
   const handelCreateTweet = (data) => {
-
     const createTweet = {
         id: dataValue.length + 1,
         avatar: profilePhoto,

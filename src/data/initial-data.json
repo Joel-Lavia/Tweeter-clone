@@ -1,89 +1,155 @@
-[
-
-  {
-    "id": 1,
-    "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818124/Mes%20images%20Twetter/nxlbhmsf9zvbl7nwf3b7.png",
-    "nomTweet": "CNN",
-    "certification":"https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
-    "lienTweet": "@CNN . 7m",
-    "tweetSetence":"President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
-    "btn": {
-      "numbeeReply": 57,
-      "numberRetweet": 144,
-      "color":9,
-      "numberReact": 123,
-
-      "numberDowland" :12
+{
+  "tweets": [
+    {
+      "id": 1,
+      "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818124/Mes%20images%20Twetter/nxlbhmsf9zvbl7nwf3b7.png",
+      "nomTweet": "CNN",
+      "certification": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
+      "lienTweet": "@CNN . 7m",
+      "tweetSetence": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+      "btn": {
+        "numbeeReply": 57,
+        "numberRetweet": 144,
+        "color": 9,
+        "numberReact": 123,
+        "numberDowland": 12
+      }
+    },
+    {
+      "id": 2,
+      "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818124/Mes%20images%20Twetter/epckdivpdith89a5rhgh.png",
+      "nomTweet": "The New York Times",
+      "certification": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
+      "lienTweet": "@nytimes . 2h",
+      "tweetSetence": "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
+      "tweetimg": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818125/Mes%20images%20Twetter/bumxst0fatm6q3q0hhso.png",
+      "btn": {
+        "numbeeReply": 112,
+        "numberRetweet": 76,
+        "color": 3,
+        "numberReact": 4872
+      }
+    },
+    {
+      "id": 3,
+      "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/inqct7f9m2sbkzhxp2bl.png",
+      "nomTweet": "Tweeter",
+      "certification": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
+      "lienTweet": "@Tweeter . oct 29",
+      "tweetSetence": "BIG NEWS lol jk still Twitter",
+      "btn": {
+        "numbeeReply": 159,
+        "numberRetweet": 98,
+        "color": 4,
+        "numberReact": 21
+      }
+    },
+    {
+      "id": 4,
+      "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/inqct7f9m2sbkzhxp2bl.png",
+      "nomTweet": "Tweeter",
+      "certification": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
+      "lienTweet": "@Tweeter . oct 4",
+      "tweetSetence": "hello literally everyone",
+      "btn": {
+        "numbeeReply": 178,
+        "numberRetweet": 458,
+        "color": 5,
+        "numberReact": 492
+      }
+    },
+    {
+      "id": 5,
+      "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/inqct7f9m2sbkzhxp2bl.png",
+      "nomTweet": "Tweeter",
+      "certification": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
+      "lienTweet": "@Tweeter . oct 4",
+      "tweetSetence": "hello literally everyone",
+      "tweetimg": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818125/Mes%20images%20Twetter/bumxst0fatm6q3q0hhso.png",
+      "btn": {
+        "numbeeReply": 1912,
+        "numberRetweet": 4458,
+        "color": 6,
+        "numberReact": 4825
+      }
+    },
+    {
+      "id": 6,
+      "avatar": "/src/images/profile-photo.png",
+      "nomTweet": "Bradley Ortiz",
+      "certification": "/src/images/Group.png",
+      "lienTweet": "@bradley_",
+      "tweetSetence": "qwerty",
+      "btn": {
+        "numbeeReply": 0,
+        "numberRetweet": 0,
+        "numberReact": 0
+      }
+    },
+    {
+      "id": 7,
+      "avatar": "/src/images/profile-photo.png",
+      "nomTweet": "Bradley Ortiz",
+      "certification": "/src/images/Group.png",
+      "lienTweet": "@bradley_",
+      "tweetSetence": "qawsed",
+      "btn": {
+        "numbeeReply": 0,
+        "numberRetweet": 0,
+        "numberReact": 0
+      }
+    },
+    {
+      "id": 8,
+      "avatar": "/src/images/profile-photo.png",
+      "nomTweet": "Bradley Ortiz",
+      "certification": "/src/images/Group.png",
+      "lienTweet": "@bradley_",
+      "tweetSetence": "qqqqq",
+      "btn": {
+        "numbeeReply": 0,
+        "numberRetweet": 0,
+        "numberReact": 0
+      }
+    },
+    {
+      "id": 9,
+      "avatar": "/src/images/profile-photo.png",
+      "nomTweet": "Bradley Ortiz",
+      "certification": "/src/images/Group.png",
+      "lienTweet": "@bradley_",
+      "tweetSetence": "qwerty",
+      "btn": {
+        "numbeeReply": 0,
+        "numberRetweet": 0,
+        "numberReact": 0
+      }
+    },
+    {
+      "id": 10,
+      "avatar": "/src/images/profile-photo.png",
+      "nomTweet": "Bradley Ortiz",
+      "certification": "/src/images/Group.png",
+      "lienTweet": "@bradley_",
+      "tweetSetence": "qaws",
+      "btn": {
+        "numbeeReply": 0,
+        "numberRetweet": 0,
+        "numberReact": 0
+      }
+    },
+    {
+      "id": 1707765201498,
+      "avatar": "/src/images/profile-photo.png",
+      "nomTweet": "Bradley Ortiz",
+      "certification": "/src/images/Group.png",
+      "lienTweet": "@bradley_",
+      "tweetSetence": "qwerty",
+      "btn": {
+        "numbeeReply": 0,
+        "numberRetweet": 0,
+        "numberReact": 0
+      }
     }
-  },
-
-  {
-    "id": 2,
-    "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818124/Mes%20images%20Twetter/epckdivpdith89a5rhgh.png",
-    "nomTweet": "The New York Times",
-    "certification":"https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
-    "lienTweet": "@nytimes . 2h",
-    "tweetSetence":
-      "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land",
-    "tweetimg":"https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818125/Mes%20images%20Twetter/bumxst0fatm6q3q0hhso.png",
-
-    "btn": {
-      "numbeeReply": 112,
-      "numberRetweet": 76,
-      "color":3,
-      "numberReact": 4872
-
-    }
-  },
-  {
-    "id": 3,
-    "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/inqct7f9m2sbkzhxp2bl.png",
-    "nomTweet": "Tweeter",
-    "certification":"https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
-    "lienTweet": "@Tweeter . oct 29",
-    "tweetSetence": "BIG NEWS lol jk still Twitter",
-
-    "btn": {
-      "numbeeReply": 159,
-      "numberRetweet": 98,
-      "color":4,
-      "numberReact": 21
-
-    }
-  },
-
-  {
-    "id": 4,
-    "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/inqct7f9m2sbkzhxp2bl.png",
-    "nomTweet": "Tweeter",
-    "certification":"https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
-    "lienTweet": "@Tweeter . oct 4",
-    "tweetSetence": "hello literally everyone",
-
-    "btn":{
-      "numbeeReply": 178,
-      "numberRetweet": 458,
-      "color":5,
-      "numberReact": 492
-
-    }
-  },
-
-  {
-    "id": 5,
-    "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/inqct7f9m2sbkzhxp2bl.png",
-    "nomTweet": "Tweeter",
-    "certification":"https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
-    "lienTweet": "@Tweeter . oct 4",
-    "tweetSetence": "hello literally everyone",
-    "tweetimg":"https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818125/Mes%20images%20Twetter/bumxst0fatm6q3q0hhso.png",
-
-    "btn": {
-      "numbeeReply": 1912,
-      "numberRetweet": 4458,
-      "color":6,
-      "numberReact": 4825
-
-    }
-  }
-]
+  ]
+}

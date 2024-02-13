@@ -1,7 +1,27 @@
 {
+  "currentUser": [
+    {
+      "userId": 1,
+      "id": "1",
+      "title": "CNN",
+      "titleDetails": "@CNN",
+      "timeTtweetDetails": "7m",
+      "avatar": "https://res.cloudinary.com/dm7edrpbk/image/upload/v1707153639/Tweet-image/mbf9octpqexv5zq4gi4b.png",
+      "text": "President joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a \"major breakthrough\" that would serve to both strengthen the Us steel industry and combat the global climat crisis "
+    },
+    {
+      "userId": 2,
+      "id": "2",
+      "title": "The New York Times",
+      "titleDetails": "@nytimes",
+      "timeTtweetDetails": "2h",
+      "avatar": "https://res.cloudinary.com/dm7edrpbk/image/upload/v1707156657/Tweet-image/zwswaqhtrfpao4kr0idz.png",
+      "text": "Gardening boomed during the pandemic.Six Black writers share show has helped them re-establish, and reimagine, a connection to cultivation and the land"
+    }
+  ],
   "tweets": [
     {
-      "id": 1,
+      "id": "1",
       "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818124/Mes%20images%20Twetter/nxlbhmsf9zvbl7nwf3b7.png",
       "nomTweet": "CNN",
       "certification": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
@@ -16,7 +36,7 @@
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818124/Mes%20images%20Twetter/epckdivpdith89a5rhgh.png",
       "nomTweet": "The New York Times",
       "certification": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
@@ -31,7 +51,7 @@
       }
     },
     {
-      "id": 3,
+      "id": "3",
       "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/inqct7f9m2sbkzhxp2bl.png",
       "nomTweet": "Tweeter",
       "certification": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
@@ -45,7 +65,7 @@
       }
     },
     {
-      "id": 4,
+      "id": "4",
       "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/inqct7f9m2sbkzhxp2bl.png",
       "nomTweet": "Tweeter",
       "certification": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
@@ -59,7 +79,7 @@
       }
     },
     {
-      "id": 5,
+      "id": "5",
       "avatar": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/inqct7f9m2sbkzhxp2bl.png",
       "nomTweet": "Tweeter",
       "certification": "https://res.cloudinary.com/dezxsfgcc/image/upload/v1706818123/Mes%20images%20Twetter/rpy1aps30rmyavqwpjle.png",
@@ -79,7 +99,7 @@
       "nomTweet": "Bradley Ortiz",
       "certification": "/src/images/Group.png",
       "lienTweet": "@bradley_",
-      "tweetSetence": "qwerty",
+      "tweetSetence": "azerty",
       "btn": {
         "numbeeReply": 0,
         "numberRetweet": 0,
@@ -92,7 +112,7 @@
       "nomTweet": "Bradley Ortiz",
       "certification": "/src/images/Group.png",
       "lienTweet": "@bradley_",
-      "tweetSetence": "qawsed",
+      "tweetSetence": "aaaa",
       "btn": {
         "numbeeReply": 0,
         "numberRetweet": 0,
@@ -105,7 +125,7 @@
       "nomTweet": "Bradley Ortiz",
       "certification": "/src/images/Group.png",
       "lienTweet": "@bradley_",
-      "tweetSetence": "qqqqq",
+      "tweetSetence": "azerty",
       "btn": {
         "numbeeReply": 0,
         "numberRetweet": 0,
@@ -118,33 +138,7 @@
       "nomTweet": "Bradley Ortiz",
       "certification": "/src/images/Group.png",
       "lienTweet": "@bradley_",
-      "tweetSetence": "qwerty",
-      "btn": {
-        "numbeeReply": 0,
-        "numberRetweet": 0,
-        "numberReact": 0
-      }
-    },
-    {
-      "id": 10,
-      "avatar": "/src/images/profile-photo.png",
-      "nomTweet": "Bradley Ortiz",
-      "certification": "/src/images/Group.png",
-      "lienTweet": "@bradley_",
-      "tweetSetence": "qaws",
-      "btn": {
-        "numbeeReply": 0,
-        "numberRetweet": 0,
-        "numberReact": 0
-      }
-    },
-    {
-      "id": 1707765201498,
-      "avatar": "/src/images/profile-photo.png",
-      "nomTweet": "Bradley Ortiz",
-      "certification": "/src/images/Group.png",
-      "lienTweet": "@bradley_",
-      "tweetSetence": "qwerty",
+      "tweetSetence": "azertyu",
       "btn": {
         "numbeeReply": 0,
         "numberRetweet": 0,

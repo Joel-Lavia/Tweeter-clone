@@ -51,10 +51,7 @@ function TweetForm() {
           id="textinput"
           className="tweet-editor-input"
           placeholder="What's happening ?"
-          {...register("tweet", {
-            require: true,
-            maxLength: 25,
-          })}
+          {...register("tweet", {require: true, maxLength: 25,})}
         />
         {errors.tweet && <p className="text-red-600">Tweet</p>}
 

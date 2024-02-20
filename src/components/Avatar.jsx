@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 function Avatar({ avatarImg }) {
   return (
-    <a href="#" className="avatar">
-      <img src={avatarImg} alt="profile-photo.png" />
-    </a>
+<Link className="avatar" to={"ProfilFollow/userId"}>
+<img src={avatarImg} alt="profile-photo.png" />
+</Link>    
   );
 }
 export default Avatar;

@@ -2,21 +2,17 @@
 // import profilePhoto from '../images/profile-photo.png'
 import BtnEditProfil from "./BtnEditProfil";
 // import { user } from "../profils/users";
-import DataProfil from "../data/initial-data.json";
-import { useParams } from "react-router-dom";
+// import DataProfil from "../data/initial-data.json";
+// import { Link } from "react-router-dom";
+import ProfilFollow from "./ProfilFollow";
 
 function ProfilAvatar() {
-  const { id } = useParams();
-  const dataProfils = DataProfil.currentUser.map((dataAllProfil) => {
-    return(
-        <div key={dataAllProfil.id}>
-            <p>{dataAllProfil.userId}</p>
-        </div>
-    )
-  })
   return (
     <main className="timeline">
-    {dataProfils}
+      {/* {DataProfil.currentUser.map((datas) => ( */}
+        {/* <Link to={`follow/${DataProfil.currentUser}`}></Link> */}
+      {/* ))} */}
+      <ProfilFollow/>
       <BtnEditProfil />
     </main>
   );

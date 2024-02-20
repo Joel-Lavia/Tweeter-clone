@@ -2,21 +2,21 @@
   "currentUser": [
     {
       "userId": 1,
-      "id": "1",
-      "title": "CNN",
+      "id": 1,
+      "nomTweet": "CNN",
       "titleDetails": "@CNN",
       "timeTtweetDetails": "7m",
       "avatar": "https://res.cloudinary.com/dm7edrpbk/image/upload/v1707153639/Tweet-image/mbf9octpqexv5zq4gi4b.png",
-      "text": "President joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a \"major breakthrough\" that would serve to both strengthen the Us steel industry and combat the global climat crisis "
+      "tweetSetence": "President joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a \"major breakthrough\" that would serve to both strengthen the Us steel industry and combat the global climat crisis "
     },
     {
       "userId": 2,
-      "id": "2",
-      "title": "The New York Times",
+      "id": 2,
+      "nomTweet": "The New York Times",
       "titleDetails": "@nytimes",
       "timeTtweetDetails": "2h",
       "avatar": "https://res.cloudinary.com/dm7edrpbk/image/upload/v1707156657/Tweet-image/zwswaqhtrfpao4kr0idz.png",
-      "text": "Gardening boomed during the pandemic.Six Black writers share show has helped them re-establish, and reimagine, a connection to cultivation and the land"
+      "tweetSetence": "Gardening boomed during the pandemic.Six Black writers share show has helped them re-establish, and reimagine, a connection to cultivation and the land"
     }
   ],
   "tweets": [

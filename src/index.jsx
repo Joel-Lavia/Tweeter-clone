@@ -1,9 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { createBrowserRouter, RouterProvider,useParams } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import Profil from "./pages/Profil";
 import DataSharing from "./components/DataSharing";
+import ProfilFollow from "./components/ProfilFollow";
 
 const router = createBrowserRouter([
   {
@@ -19,10 +23,11 @@ const router = createBrowserRouter([
     path: "/Profil",
     element: <Profil />,
   },
-  // {
-  //   path: ":id",
-  //   element: <Profil />,
-  // },
+  {
+    path: "ProfilFollow/:userId",
+    element: <ProfilFollow />,
+  },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

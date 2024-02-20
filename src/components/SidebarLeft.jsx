@@ -26,7 +26,7 @@ function SidebarLeft() {
     <Link to={'/Messages'}><button className="sidebarbtn"><img src={messages} alt="btn messages" />Messages</button></Link>
     <Link to={'/Bookmarks'}><button className="sidebarbtn"><img src={bookMark} alt="btn bookmarks" />Bookmarks</button></Link>
     <Link to={'/Lists'}><button className="sidebarbtn"><img src={list} alt="btn twett list" />Lists</button></Link>
-    <Link to={'/Prof'}><button className="sidebarbtn"><img src={profilTweet} alt="btn profil tweet" />Profil</button></Link>
+    <Link to={'/Profil'}><button className="sidebarbtn"><img src={profilTweet} alt="btn profil tweet" />Profil</button></Link>
     <Link to={'/More'}><button className="sidebarbtn"><img src={more} alt="btn more" />More</button></Link>
     <button className="button">Tweet</button>
      </div>    

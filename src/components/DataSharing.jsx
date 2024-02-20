@@ -6,6 +6,7 @@ export const ContextGlobal = createContext();
 
 function DataSharing({ children }) {
   const [dataValue, setDataValue] = useState(Data.tweets);
+  const [dataUsers,setDataUsers] = useState(Data.currentUser);
 
   useEffect(() => {
     axios.get("http://localhost:3000/tweets")
@@ -23,7 +24,7 @@ function DataSharing({ children }) {
     
   }
   return (
-    <ContextGlobal.Provider value={{dataValue, addTweet}}>
+    <ContextGlobal.Provider value={{dataValue, addTweet,dataUsers}}>
       {children}
     </ContextGlobal.Provider>
   );

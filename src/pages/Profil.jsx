@@ -3,14 +3,12 @@ import SidebarLeft from "../components/SidebarLeft";
 import Trends from "../components/Trends";
 import Layout from "../components/layout";
 
-function Profil(params) {
+function Profil() {
 return(
 <Layout>
       <SidebarLeft />
       <ProfilAvatar/>
-      <div className="trendsPage">
       <Trends/>
-      </div>
     </Layout>
 );  
 }

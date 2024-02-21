@@ -12,6 +12,7 @@ import Data from "../data/initial-data.json";
 function Twett() {
   const { dataValue } = useContext(ContextGlobal);
   const tweet = Data.tweets.map((dataAll) => {
+    let dataFollowers = Data.currentUser.find((alldataFollowers) => alldataFollowers.id === dataAll.id)
     return (
       <div key={dataAll.id} className="flex py-4	border-b border-b-gray-900">
         {/*Composant des divers avatar de la page*/}

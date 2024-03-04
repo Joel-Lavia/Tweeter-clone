@@ -11,34 +11,35 @@ import Data from "../data/initial-data.json";
 
 function Twett() {
   const { dataValue } = useContext(ContextGlobal);
-  const tweet = Data.tweets.map((dataAll) => {
-    let dataFollowers = Data.currentUser.find((alldataFollowers) => alldataFollowers.id === dataAll.id)
+  const tweets = Data.tweets.map((tweet) => {
+  // const  dataFollowers = Data.currentUser.find((alldataFollowers) => alldataFollowers.id === dataAll.id)
+  
     return (
-      <div key={dataAll.id} className="flex py-4	border-b border-b-gray-900">
+    <div key={tweet.id} className="flex py-4	border-b border-b-gray-900">
         {/*Composant des divers avatar de la page*/}
-        <Avatar avatarImg={dataAll.avatar} />
+        <Avatar avatarImg={tweet.avatar} />
 
         {/*differents tweets de la page*/}
         <div className="flex flex-col	gap-2	">
           {/*differents tweets-title de la page*/}
           <p className="flex text-base	gap-2	">
-            <Link to={"ProfilFollow/userId"}>
-              <h1 className="text-base">{dataAll.nomTweet}</h1>
+            <Link to={`ProfilFollow/${tweet.nomTweet}`}>
+              <h1 className="text-base">{tweet.nomTweet}</h1>
             </Link>
             <Link to={`ProfilFollow/$`}>
-              <img src={dataAll.certification} alt="group" />
+              <img src={tweet.certification} alt="group" />
             </Link>
-            <Link to={`ProfilFollow/${dataAll.id}`}>
-              <span className="text-neutral-600	">{dataAll.lienTweet}</span>
+            <Link to={`ProfilFollow/`}>
+              <span className="text-neutral-600	">{tweet.lienTweet}</span>
             </Link>
           </p>
           {/*differents phrase de la page*/}
-          <p className="text-white-700 text-base ">{dataAll.tweetSetence}</p>
+          <p className="text-white-700 text-base ">{tweet.tweetSetence}</p>
 
           {/*differents tweet-images de la page*/}
           <a href="#" className="pt-8	 pr-4	pb-4	pl-4		">
             <img
-              src={dataAll.tweetimg}
+              src={tweet.tweetimg}
               alt=""
               className="max-w-full h-auto	rounded-3xl"
             />
@@ -48,15 +49,15 @@ function Twett() {
           <div className="flex justify-center items-center gap-20 ">
             <TweetLike
               commentbtn={<FaRegComment fontSize={"1.4em"} />}
-              nbr={dataAll.btn.numbeeReply}
+              nbr={tweet.btn.numbeeReply}
             />
             <TweetLike
               commentbtn={<LiaRetweetSolid fontSize={"1.4em"} />}
-              nbr={dataAll.btn.numberRetweet}
+              nbr={tweet.btn.numberRetweet}
             />
             <TweetLike
               commentbtn={<CiHeart fontSize={"1.4em"} />}
-              nbr={dataAll.btn.numberReact}
+              nbr={tweet.btn.numberReact}
             />
 
             <button>
@@ -68,6 +69,6 @@ function Twett() {
     );
   });
 
-  return <section>{tweet}</section>;
+  return <section>{tweets}</section>;
 }
 export default Twett;

@@ -1,18 +1,16 @@
 import { useParams } from "react-router-dom";
-import DataFollower from "../data/initial-data.json";
+import Data from "../data/initial-data.json";
 function ProfilFollow() {
   const { userId } = useParams();
-  const followers = DataFollower.currentUser.find((allFollowers) => allFollowers.id === userId);
+  const user = Data.currentUser.find((userItem) => userItem.nomTweet === userId);
 
   return (
     <div>
-      {
-        followers && (
+      {user && (
         <div>
-      <p>{followers.tweetSetence}</p>
+          <p>{user.tweetSetence}</p>
         </div>
-        )
-      }
+      )}
     </div>
   );
 }

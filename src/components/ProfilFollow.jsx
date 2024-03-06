@@ -16,7 +16,7 @@ function ProfilFollow() {
       <SidebarLeft />
       <main main className="timeline">
         {user && (
-          <div>
+          <section>
             <div className="border-b border-b-gray-900 pb-7">
               <Link to={"/"} className="flex gap-3 mt-7 leading-4">
                 <FaArrowLeft />
@@ -25,8 +25,16 @@ function ProfilFollow() {
                 </span>
               </Link>
             </div>
+
+            <div className="border-b border-b-red-900">
+              <img src={user.backgroundSectionProfil} alt="" />
+            </div>
+            <div className="">
+                <img src={user.avatar} alt="img avatar tweet" />
+              </div>
+
             <p>{user.tweetSetence}</p>
-          </div>
+          </section>
         )}
       </main>
       <Trends />

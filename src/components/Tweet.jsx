@@ -17,7 +17,9 @@ function Twett() {
     return (
     <div key={tweet.id} className="flex py-4	border-b border-b-gray-900">
         {/*Composant des divers avatar de la page*/}
+        <Link to={`ProfilFollow/${tweet.nomTweet}`} className="avatar">
         <Avatar avatarImg={tweet.avatar} />
+        </Link>
 
         {/*differents tweets de la page*/}
         <div className="flex flex-col	gap-2	">
@@ -26,10 +28,10 @@ function Twett() {
             <Link to={`ProfilFollow/${tweet.nomTweet}`}>
               <h1 className="text-base">{tweet.nomTweet}</h1>
             </Link>
-            <Link to={`ProfilFollow/$`}>
+            <Link to={`ProfilFollow/${tweet.nomTweet}`}>
               <img src={tweet.certification} alt="group" />
             </Link>
-            <Link to={`ProfilFollow/`}>
+            <Link to={`ProfilFollow/${tweet.nomTweet}`}>
               <span className="text-neutral-600	">{tweet.lienTweet}</span>
             </Link>
           </p>

@@ -28,10 +28,9 @@ function ProfilFollow() {
 
             <div className="border-b border-b-red-900">
               <img src={user.backgroundSectionProfil} alt="" />
+              <img src={user.avatar} alt="img avatar tweet" className="" />
             </div>
-            <div className="">
-                <img src={user.avatar} alt="img avatar tweet" />
-              </div>
+            <div className=""></div>
 
             <p>{user.tweetSetence}</p>
           </section>

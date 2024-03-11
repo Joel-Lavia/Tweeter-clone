@@ -10,8 +10,8 @@ import { Link } from "react-router-dom";
 import Data from "../data/initial-data.json";
 
 function Twett() {
-  const { dataValue } = useContext(ContextGlobal);
-  const tweets = Data.tweets.map((tweet) => {
+  const { dataValue} = useContext(ContextGlobal);
+  const tweets = dataValue.tweets.map((tweet) => {
     // const  dataFollowers = Data.currentUser.find((alldataFollowers) => alldataFollowers.id === dataAll.id)
 
     return (

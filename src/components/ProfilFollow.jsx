@@ -7,8 +7,7 @@ import { FaArrowLeft } from "react-icons/fa";
 
 function ProfilFollow() {
   const { userId } = useParams();
-  const user = Data.currentUser.find(
-    (userItem) => userItem.nomTweet === userId
+  const user = Data.currentUser.find((userItem) => userItem.nomTweet === userId
   );
 
   return (
@@ -26,11 +25,13 @@ function ProfilFollow() {
               </Link>
             </div>
 
-            <div className="border-b border-b-red-900">
-              <img src={user.backgroundSectionProfil} alt="" />
-              <img src={user.avatar} alt="img avatar tweet" className="" />
+            <div className="relative">
+
+            <img src={user.backgroundSectionProfil} alt="" className="relative" />
+
+            <img src={user.avatar} alt="img avatar tweet" className="absolute bottom-1 left-5 border rounded-full" />
             </div>
-            <div className=""></div>
+            <button className="border rounded-full p-2 font-bold">Follow</button>
 
             <p>{user.tweetSetence}</p>
           </section>
